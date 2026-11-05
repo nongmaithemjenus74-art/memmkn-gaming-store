@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+  <title>MEMMKN Gaming Store</title>
+  <meta name="description" content="MEMMKN Gaming Store — game top-up information and order requests.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span class="dot"></span> MEMMKN GAMING STORE <span class="topnote">V1.0 • DEMO</span></div>
+  <header class="header">
+    <a class="brand" href="#"><span class="brand-icon">M</span><span>MEMMKN<span class="blue"> GAMING</span><small>STORE</small></span></a>
+    <nav><a href="#games">Games</a><a href="#how">How it works</a><a href="#support">Support</a></nav>
+    <a class="nav-cta" href="#order">Place request <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> YOUR GAMING TOP-UP HUB</div>
+        <h1>POWER UP<br>YOUR <span class="gradient">GAME.</span></h1>
+        <p class="lead">Welcome to MEMMKN Gaming Store. Explore game top-up categories and send an order request. Simple, clear and player-focused.</p>
+        <div class="hero-actions"><a class="btn primary" href="#games">Explore games <span>→</span></a><a class="btn secondary" href="#how">How it works</a></div>
+        <div class="trust-row"><span>✦ Clear order process</span><span>✦ Support-first</span><span>✦ No password required</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract neon gaming artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core"><div class="core-mark">M</div><div class="core-caption">MEMMKN<br><b>GAMING STORE</b></div></div>
+        <div class="float-tag tag-a">PLAYER FIRST</div><div class="float-tag tag-b">GAME ON / LEVEL UP</div>
+        <div class="spark s1">✦</div><div class="spark s2">✧</div><div class="spark s3">+</div>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-head"><div><div class="eyebrow">CHOOSE YOUR ARENA</div><h2>Game categories</h2></div><p>Catalog preview — availability and authorized supply must be confirmed before any sale.</p></div>
+      <div class="game-grid">
+        <article class="game-card">
+          <div class="game-art art-battle"><span class="game-symbol">B</span><span class="game-chip">CATEGORY</span></div>
+          <div class="game-info"><div><h3>Battle Royale</h3><p>BGMI / PUBG Mobile category</p></div><span class="arrow">↗</span></div>
+          <button class="outline-btn choose" data-game="Battle Royale (BGMI / PUBG Mobile)">Request information</button>
+        </article>
+        <article class="game-card">
+          <div class="game-art art-fire"><span class="game-symbol">F</span><span class="game-chip">CATEGORY</span></div>
+          <div class="game-info"><div><h3>Free Fire</h3><p>Diamonds category</p></div><span class="arrow">↗</span></div>
+          <button class="outline-btn choose" data-game="Free Fire">Request information</button>
+        </article>
+        <article class="game-card">
+          <div class="game-art art-more"><span class="game-symbol">+</span><span class="game-chip">COMING LATER</span></div>
+          <div class="game-info"><div><h3>More games</h3><p>New categories may be added</p></div><span class="arrow">↗</span></div>
+          <button class="outline-btn choose" data-game="Other game">Suggest a game</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="how section" id="how">
+      <div class="section-head"><div><div class="eyebrow">SIMPLE PROCESS</div><h2>How it works</h2></div></div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>Choose a game</h3><p>Select a category from the catalog.</p></div>
+        <div class="step"><span>02</span><h3>Send a request</h3><p>Tell us which game and package you are asking about.</p></div>
+        <div class="step"><span>03</span><h3>Wait for confirmation</h3><p>Availability, final price and authorized supply must be confirmed before payment.</p></div>
+      </div>
+    </section>
+
+    <section class="order-section section" id="order">
+      <div class="order-intro"><div class="eyebrow">ORDER ENQUIRY</div><h2>Start an<br><span class="gradient">order request.</span></h2><p>This demo form works in your browser only. It does not send, save or process orders or payments yet.</p><div class="notice">🔒 Never share your game password, OTP or account login. A Player ID may only be requested later if the official top-up method requires it.</div></div>
+      <form id="orderForm" class="order-form">
+        <label for="game">Game category</label>
+        <select id="game" required><option value="">Choose a game</option><option>Battle Royale (BGMI / PUBG Mobile)</option><option>Free Fire</option><option>Other game</option></select>
+        <label for="package">Package or top-up you want</label>
+        <input id="package" maxlength="80" placeholder="Example: Please share available packages" required>
+        <label for="contact">Contact method (optional)</label>
+        <input id="contact" maxlength="80" placeholder="Enter a contact method only if you want">
+        <button class="btn primary full" type="submit">Preview request <span>→</span></button>
+        <p class="form-small">No payment is collected. Do not enter passwords, OTPs, bank details or sensitive information.</p>
+        <div id="preview" class="preview" aria-live="polite" hidden></div>
+      </form>
+    </section>
+
+    <section class="support section" id="support">
+      <div><div class="eyebrow">NEED HELP?</div><h2>Support that keeps<br>things straightforward.</h2><p>Customer support contact details will be added after the store owner chooses a business contact channel.</p></div>
+      <div class="support-box"><span class="support-icon">✦</span><h3>MEMMKN Support</h3><p>Support contact: coming soon</p><span class="status">● CONTACT DETAILS NOT SET</span></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-icon">M</span><span>MEMMKN<span class="blue"> GAMING</span><small>STORE</small></span></a><p>© <span id="year"></span> MEMMKN Gaming Store. Independent demo project; not affiliated with any game publisher.</p><p class="footer-note">Game names and trademarks belong to their respective owners. No official partnership or authorized reseller status is claimed.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
